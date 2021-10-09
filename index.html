@@ -1,7 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="index.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div id="final-page-cover">
+        <div class="centered">
+            <h2 id="winner-text">TEST</h2>
+            <div id="final-page-buttons-div">
+                <button id="restart-button-final-screen" class="end-buttons">Restart!</button>
+                <button id="view-board-final-screen" class="end-buttons">View Game</button> 
+            </div>
+        </div>
+    </div>
+    <h1>TicTacToe</h1>
+    <h6>By Samuel Poulsom</h6>
+    <table>
+        <tr>
+            <td id="box7" class="box">X</td>
+            <td id="box8" class="box">X</td>
+            <td id="box9" class="box">X</td>
+        </tr>
+        <tr>
+            <td id="box4" class="box">X</td>
+            <td id="box5" class="box">X</td>
+            <td id="box6" class="box">X</td>
+        </tr>
+        <tr>
+            <td id="box1" class="box">X</td>
+            <td id="box2" class="box">X</td>
+            <td id="box3" class="box">X</td>
+        </tr>
+    </table>
+    <button id="restart-button">Restart!</button>
+    
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous">
+    </script>  
+    
+    <script src="index.js"></script>
+    <!-- <script src="{% static 'main_app/javascript/computerPlayer.js' %}"></script> -->
 </body>
 </html>

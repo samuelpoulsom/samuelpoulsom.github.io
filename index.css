@@ -1,0 +1,143 @@
+/* Variables */
+:root {
+    --border-style: 5px solid white;
+}
+
+/* Main selectors for majority of the page */
+body {
+    font-size: 7em;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    text-align: center;
+    background-color: rgba(30, 30, 30, 1);
+    color: white;
+}
+h1 {
+    font-size: 1em;
+    margin-bottom: 0px;
+}
+h6 {
+    font-size: 0.2em;
+    margin-top: 0px;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.2em;
+    border-spacing: 0px;
+}
+td {
+    text-align: center;
+    width: 2em;
+    height: 2em;
+    background-color: rgba(30, 30, 30, 1);
+    color: white;
+}
+button {
+    font-size: 0.3em;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+#restart-button:hover {
+    cursor: pointer;
+}
+
+/* Styling for the page that appears when the game is over */
+#final-page-cover {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(44, 44, 44, 0.993);
+    text-align: center;
+
+    visibility: hidden;
+}
+#final-page-buttons-div {
+    display: block;
+}
+#winner-text {
+    margin-top: 25%;
+    color: white;
+}
+#restart-button-final-screen:hover {
+    background-color: darkgray;
+    cursor: pointer;
+}
+#view-board-final-screen {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.0);
+    color: white;
+    font-size: 0.2em;
+}
+#view-board-final-screen:hover {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.0);
+    color: darkgrey;
+    cursor: pointer;
+}
+#final-page-buttons-div {
+    text-align: center;
+}
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+.end-buttons {
+    display: block;
+    width: max-content;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translateX(-50%);
+}
+
+/* Styling for each individual cell */
+/* .box:hover {
+    cursor: pointer;
+} */
+#box1 {
+    border-top: var(--border-style);
+    border-right: var(--border-style);
+}
+#box2 {
+    border-top: var(--border-style);
+    border-left: var(--border-style);
+    border-right: var(--border-style);
+}
+#box3 {
+    border-top: var(--border-style);
+    border-left: var(--border-style);
+}
+#box4 {
+    border-top: var(--border-style);
+    border-bottom: var(--border-style);
+    border-right: var(--border-style);
+}
+#box5 {
+    border-top: var(--border-style);
+    border-bottom: var(--border-style);
+    border-left: var(--border-style);
+    border-right: var(--border-style);
+}
+#box6 {
+    border-top: var(--border-style);
+    border-bottom: var(--border-style);
+    border-left: var(--border-style);
+}
+#box7 {
+    border-bottom: var(--border-style);
+    border-right: var(--border-style);
+}
+#box8 {
+    border-bottom: var(--border-style);
+    border-left: var(--border-style);
+    border-right: var(--border-style);
+}
+#box9 {
+    border-bottom: var(--border-style);
+    border-left: var(--border-style);
+}
